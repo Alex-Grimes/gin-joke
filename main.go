@@ -27,7 +27,7 @@ var jokes = []Joke{
 func main() {
 	router := gin.Default()
 
-	router.Use(static.Serve("/", static.LocalFile("./views", true)))
+	router.Use(static.Serve("/", static.LocalFile("./views/go-jokes", true)))
 
 	api := router.Group("/api")
 
